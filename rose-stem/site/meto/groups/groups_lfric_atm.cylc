@@ -245,6 +245,140 @@
         "lfric_atm_nwp_gal9_3n_2T-C192_MG_ex1a_cce_fast-debug-32bit",
         "lfric_atm_nwp_gal9_3n_4T-C192_MG_ex1a_cce_fast-debug-32bit",
     ],
+    "ex1a_omp_C192": [
+        "lfric_atm_nwp_gal9_3n_1T-C192_MG_ex1a_cce_production-32bit",
+        "lfric_atm_nwp_gal9_3n_2T-C192_MG_ex1a_cce_production-32bit",
+        "lfric_atm_nwp_gal9_3n_4T-C192_MG_ex1a_cce_production-32bit",
+        "lfric_atm_nwp_gal9_3n_8T-C192_MG_ex1a_cce_production-32bit",
+        "lfric_atm_nwp_gal9_3n_1T-C192_MG_ex1a_gnu_production-32bit",
+        "lfric_atm_nwp_gal9_3n_2T-C192_MG_ex1a_gnu_production-32bit",
+        "lfric_atm_nwp_gal9_3n_4T-C192_MG_ex1a_gnu_production-32bit",
+        "lfric_atm_nwp_gal9_3n_8T-C192_MG_ex1a_gnu_production-32bit",
+    ],
+    "ex1a_omp_C192_production": [
+        "lfric_atm_nwp_gal9_3n_1T-C192_MG_ex1a_cce_production-32bit",
+        "lfric_atm_nwp_gal9_3n_2T-C192_MG_ex1a_cce_production-32bit",
+        "lfric_atm_nwp_gal9_3n_4T-C192_MG_ex1a_cce_production-32bit",
+        "lfric_atm_nwp_gal9_3n_8T-C192_MG_ex1a_cce_production-32bit",
+        "lfric_atm_nwp_gal9_3n_1T-C192_MG_ex1a_gnu_production-32bit",
+        "lfric_atm_nwp_gal9_3n_2T-C192_MG_ex1a_gnu_production-32bit",
+        "lfric_atm_nwp_gal9_3n_4T-C192_MG_ex1a_gnu_production-32bit",
+        "lfric_atm_nwp_gal9_3n_8T-C192_MG_ex1a_gnu_production-32bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_tiling_debug": [
+        "lfric_atm_nwp_gal9_tiling_1x1_1T_3nodes-C192_MG_ex1a_cce_fast-debug-32bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_tiling_debug_gnu": [
+        "lfric_atm_nwp_gal9_tiling_1x1_1T_3nodes-C192_MG_ex1a_gnu_fast-debug-32bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_no_tiling_comparison_gnu_32": [
+        "lfric_atm_nwp_gal9_tiling_1x1_4T_3nodes-C192_MG_ex1a_gnu_production-32bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_no_tiling_comparison_gnu_64": [
+        "lfric_atm_nwp_gal9_tiling_1x1_4T_3nodes-C192_MG_ex1a_gnu_production-64bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_4x4_tiling_comparison_gnu_32": [
+        "lfric_atm_nwp_gal9_tiling_4x4_4T_3nodes-C192_MG_ex1a_gnu_production-32bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_4x4_tiling_comparison_gnu_64": [
+        "lfric_atm_nwp_gal9_tiling_4x4_4T_3nodes-C192_MG_ex1a_gnu_production-64bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_no_tiling_comparison_cce_32": [
+        "lfric_atm_nwp_gal9_tiling_1x1_4T_3nodes-C192_MG_ex1a_cce_production-32bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_no_tiling_comparison_cce_64": [
+        "lfric_atm_nwp_gal9_tiling_1x1_4T_3nodes-C192_MG_ex1a_cce_production-64bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_4x4_tiling_comparison_cce_32": [
+        "lfric_atm_nwp_gal9_tiling_4x4_4T_3nodes-C192_MG_ex1a_cce_production-32bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_4x4_tiling_comparison_cce_64": [
+        "lfric_atm_nwp_gal9_tiling_4x4_4T_3nodes-C192_MG_ex1a_cce_production-64bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_1x1_tiling_64": [
+        "lfric_atm_nwp_gal9_tiling_1x1_1T_3nodes-C192_MG_ex1a_cce_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_1x1_2T_3nodes-C192_MG_ex1a_cce_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_1x1_4T_3nodes-C192_MG_ex1a_cce_production-64bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_1x1_tiling_32": [
+        "lfric_atm_nwp_gal9_tiling_1x1_1T_3nodes-C192_MG_ex1a_cce_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_1x1_2T_3nodes-C192_MG_ex1a_cce_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_1x1_4T_3nodes-C192_MG_ex1a_cce_production-32bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_tiling_vis_64": [
+        "lfric_atm_nwp_gal9_tiling_2x2_2T_3nodes-C192_MG_ex1a_cce_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_4x4_2T_3nodes-C192_MG_ex1a_cce_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_2x2_4T_3nodes-C192_MG_ex1a_cce_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_4x4_4T_3nodes-C192_MG_ex1a_cce_production-64bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_tiling_vis_32": [
+        "lfric_atm_nwp_gal9_tiling_2x2_2T_3nodes-C192_MG_ex1a_cce_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_4x4_2T_3nodes-C192_MG_ex1a_cce_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_2x2_4T_3nodes-C192_MG_ex1a_cce_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_4x4_4T_3nodes-C192_MG_ex1a_cce_production-32bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_1x1_tiling_64_gnu": [
+        "lfric_atm_nwp_gal9_tiling_1x1_1T_3nodes-C192_MG_ex1a_gnu_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_1x1_2T_3nodes-C192_MG_ex1a_gnu_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_1x1_4T_3nodes-C192_MG_ex1a_gnu_production-64bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_1x1_tiling_32_gnu": [
+        "lfric_atm_nwp_gal9_tiling_1x1_1T_3nodes-C192_MG_ex1a_gnu_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_1x1_2T_3nodes-C192_MG_ex1a_gnu_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_1x1_4T_3nodes-C192_MG_ex1a_gnu_production-32bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_tiling_vis_64_gnu": [
+        "lfric_atm_nwp_gal9_tiling_2x2_2T_3nodes-C192_MG_ex1a_gnu_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_4x4_2T_3nodes-C192_MG_ex1a_gnu_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_2x2_4T_3nodes-C192_MG_ex1a_gnu_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_4x4_4T_3nodes-C192_MG_ex1a_gnu_production-64bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_tiling_vis_32_gnu": [
+        "lfric_atm_nwp_gal9_tiling_2x2_2T_3nodes-C192_MG_ex1a_gnu_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_4x4_2T_3nodes-C192_MG_ex1a_gnu_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_2x2_4T_3nodes-C192_MG_ex1a_gnu_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_4x4_4T_3nodes-C192_MG_ex1a_gnu_production-32bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_tiling_8s_32_gnu": [
+        "lfric_atm_nwp_gal9_tiling_8x8_2T_3nodes-C192_MG_ex1a_gnu_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_8x8_4T_3nodes-C192_MG_ex1a_gnu_production-32bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_tiling_8s_64_gnu": [
+        "lfric_atm_nwp_gal9_tiling_8x8_2T_3nodes-C192_MG_ex1a_gnu_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_8x8_4T_3nodes-C192_MG_ex1a_gnu_production-64bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_tiling_8s_32": [
+        "lfric_atm_nwp_gal9_tiling_8x8_2T_3nodes-C192_MG_ex1a_cce_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_8x8_4T_3nodes-C192_MG_ex1a_cce_production-32bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_tiling_8s_64": [
+        "lfric_atm_nwp_gal9_tiling_8x8_2T_3nodes-C192_MG_ex1a_cce_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_8x8_4T_3nodes-C192_MG_ex1a_cce_production-64bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_tiling_plus_32_gnu": [
+        "lfric_atm_nwp_gal9_tiling_12x12_2T_3nodes-C192_MG_ex1a_gnu_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_12x12_4T_3nodes-C192_MG_ex1a_gnu_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_16x16_2T_3nodes-C192_MG_ex1a_gnu_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_16x16_4T_3nodes-C192_MG_ex1a_gnu_production-32bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_tiling_plus_64_gnu": [
+        "lfric_atm_nwp_gal9_tiling_12x12_2T_3nodes-C192_MG_ex1a_gnu_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_12x12_4T_3nodes-C192_MG_ex1a_gnu_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_16x16_2T_3nodes-C192_MG_ex1a_gnu_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_16x16_4T_3nodes-C192_MG_ex1a_gnu_production-64bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_tiling_plus_32": [
+        "lfric_atm_nwp_gal9_tiling_12x12_2T_3nodes-C192_MG_ex1a_cce_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_12x12_4T_3nodes-C192_MG_ex1a_cce_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_16x16_2T_3nodes-C192_MG_ex1a_cce_production-32bit",
+        "lfric_atm_nwp_gal9_tiling_16x16_4T_3nodes-C192_MG_ex1a_cce_production-32bit",
+    ],
+    "lfric_atm_nwp_gal9_ex1a_C192_tiling_plus_64": [
+        "lfric_atm_nwp_gal9_tiling_12x12_2T_3nodes-C192_MG_ex1a_cce_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_12x12_4T_3nodes-C192_MG_ex1a_cce_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_16x16_2T_3nodes-C192_MG_ex1a_cce_production-64bit",
+        "lfric_atm_nwp_gal9_tiling_16x16_4T_3nodes-C192_MG_ex1a_cce_production-64bit",
+    ],
     "ex1a_omp_gnu": [
         "lfric_atm_nwp_gal9_1T-C12_ex1a_gnu_fast-debug-32bit",
         "lfric_atm_nwp_gal9_2T-C12_ex1a_gnu_fast-debug-32bit",

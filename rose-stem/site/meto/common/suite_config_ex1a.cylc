@@ -41,10 +41,12 @@
 
 {% set ex1a_perftools = 'module load perftools' %}
 
+{% set tiling_configs = ["1x1", "2x2", "4x4", "8x8"] %}
+
     [[EX1A_BASE]]
         platform = {{site_vars.host_ex}}
         [[[environment]]]
-            BUILD_ROOT = ${TMPDIR}
+            BUILD_ROOT = ${DATADIR}/temp_build_dir
             HYPERTHREADS    = 1
             CORES_PER_NODE  = {{site_vars.node_cores}}
             NUMA_REGIONS_PER_NODE = 2
@@ -59,7 +61,8 @@
         [[[environment]]]
             TRANSMUTE_INCLUDE_METHOD = specify_include
         [[[environment]]]
-            USE_LEGACY_TIMER=true
+            USE_LEGACY_TIMER=false
+            USE_VERNIER=true
             USE_TIMING_WRAPPER=true
         [[[directives]]]
             -l tmpsize=12GB

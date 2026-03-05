@@ -203,6 +203,51 @@
         "threads": 4,
     }) %}
 
+{% elif task_ns.conf_name == "nwp_gal9_3n_8T-C192_MG" %}
+
+    {% do task_dict.update({
+        "opt_confs": ["physics_segmentation","um_dump","no_diags"],
+        "resolution": "C192_MG",
+        "DT": 720,
+        "tsteps": 120,
+        "mpi_parts": 48,
+        "task_ranks_per_node": 16,
+        "threads": 8,
+    }) %}
+
+
+{% elif task_ns.conf_name.startswith("nwp_gal9_tiling_") and "-C192_MG" in task_ns.conf_name %}
+
+    {% if "debug" in task_ns.conf_name %}
+        {% do task_dict.update({
+            "log_level": "debug"
+            }) %}
+    {% endif %}
+
+    {# Expected pattern: nwp_gal9_tiling_{tile}_{threads}T_{nodes}nodes-C192_MG #}
+    {% set base = task_ns.conf_name.split("nwp_gal9_tiling_")[1] %}
+    {% set base = base.split("-C192_MG")[0] %}
+    {% set parts = base.split("_") %}
+
+    {# Extract variables #}
+    {% set tile = parts[0] %}                               {# e.g. "1x1" #}
+    {% set threads = (parts[1] | replace("T","")) | int %}       {# e.g. "1T" -> 1 #}
+    {% set nodes = (parts[2] | replace("nodes","")) | int %}     {# e.g. "6nodes" -> 6 #}
+
+    {% if nodes in [3, 6, 12, 24] and threads in [1, 2, 4] and tile in ['1x1','2x2','4x4','8x8','12x12','16x16'] %}
+        {% set task_ranks_per_node = 128 // threads %}
+        {% set mpi_parts = nodes * task_ranks_per_node %}
+        {% do task_dict.update({
+            "opt_confs": ["physics_segmentation","um_dump","no_diags","tile_" ~ tile],
+            "resolution": "C192_MG",
+            "DT": 720,
+            "tsteps": 120,
+            "mpi_parts": mpi_parts,
+            "task_ranks_per_node": task_ranks_per_node,
+            "threads": threads
+        }) %}
+    {% endif %}
+
 {% elif task_ns.conf_name == "nwp_gal9-C224_MG" %}
 
     {% do task_dict.update({
