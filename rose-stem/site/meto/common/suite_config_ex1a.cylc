@@ -61,7 +61,6 @@
         [[[environment]]]
             TRANSMUTE_INCLUDE_METHOD = specify_include
         [[[environment]]]
-            USE_LEGACY_TIMER=false
             USE_VERNIER=true
             USE_TIMING_WRAPPER=true
         [[[directives]]]

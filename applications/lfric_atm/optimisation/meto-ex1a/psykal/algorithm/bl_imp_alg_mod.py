@@ -13,7 +13,7 @@ the initialisation built-ins generically.
 '''
 
 from psyclone_tools import (redundant_computation_setval, colour_loops,
-                            view_transformed_schedule)
+                            view_transformed_schedule,profile_loops)
 
 
 def trans(psyir):
@@ -26,4 +26,5 @@ def trans(psyir):
     '''
     redundant_computation_setval(psyir)
     colour_loops(psyir)
+    profile_loops(psyir)
     view_transformed_schedule(psyir)

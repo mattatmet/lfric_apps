@@ -25,7 +25,7 @@
 {% elif task_ns.conf_name == "baroclinic-C24_MG" %}
 
     {% do task_dict.update({
-        "opt_confs": ["baroclinic"],
+        "opt_confs": ["baroclinic", "tile_4x4"],
         "resolution": "C24_MG",
         "DT": 3600,
         "threads": 4,
@@ -37,7 +37,7 @@
 {% elif task_ns.conf_name == "baroclinic-C48_MG" %}
 
     {% do task_dict.update({
-        "opt_confs": ["baroclinic"],
+        "opt_confs": ["baroclinic", "tile_4x4"],
         "resolution": "C48_MG",
         "DT": 3600,
         "threads": 4,
@@ -48,7 +48,7 @@
 {% elif task_ns.conf_name == "baroclinic-C48_MG-3panel" %}
 
     {% do task_dict.update({
-        "opt_confs": ["baroclinic"],
+        "opt_confs": ["baroclinic", "tile_4x4"],
         "resolution": "C48_MG",
         "DT": 3600,
         "threads": 1,
@@ -78,7 +78,7 @@
 {% elif task_ns.conf_name == "baroclinic-pert-C24_MG" %}
 
     {% do task_dict.update({
-        "opt_confs": ["baroclinic","io1", "perturb"],
+        "opt_confs": ["baroclinic","io1", "perturb", "tile_4x4"],
         "resolution": "C24_MG",
         "DT": 3600,
         "threads": 1,
@@ -93,7 +93,7 @@
 {% elif task_ns.conf_name == "baroclinic-alt1-C24s_MG" %}
 
     {% do task_dict.update({
-        "opt_confs": ["baroclinic", "gungho-alt1-spherical"],
+        "opt_confs": ["baroclinic", "gungho-alt1-spherical", "tile_4x4"],
         "resolution": "C24s_MG",
         "DT": 3600,
         "threads": 4,
@@ -105,7 +105,7 @@
 {% elif task_ns.conf_name == "baroclinic-alt2-C24_MG_op" %}
 
     {% do task_dict.update({
-        "opt_confs": ["baroclinic", "gungho-alt2-spherical"],
+        "opt_confs": ["baroclinic", "gungho-alt2-spherical", "tile_4x4"],
         "resolution": "C24_MG_op",
         "DT": 3600,
         "threads": 4,
@@ -118,7 +118,7 @@
 {% elif task_ns.conf_name == "baroclinic-alt3-C24_MG" %}
 
     {% do task_dict.update({
-        "opt_confs": ["baroclinic", "gungho-alt3"],
+        "opt_confs": ["baroclinic", "gungho-alt3", "tile_4x4"],
         "resolution": "C24_MG",
         "DT": 3600,
         "threads": 4,
@@ -168,7 +168,7 @@
 {% elif task_ns.conf_name == "dcmip200-C24_MG" %}
 
     {% do task_dict.update({
-        "opt_confs": ["dcmip200"],
+        "opt_confs": ["dcmip200", "tile_4x4"],
         "resolution": "C24_MG",
         "DT": 600,
         "mpi_parts": 6,
@@ -181,7 +181,7 @@
 {% elif task_ns.conf_name == "dcmip200_realorog-C48_MG" %}
 
     {% do task_dict.update({
-        "opt_confs": ["dcmip200_realorog"],
+        "opt_confs": ["dcmip200_realorog", "tile_4x4"],
         "resolution": "C48_MG",
         "DT": 600,
         "mpi_parts": 24,
@@ -191,7 +191,7 @@
 {% elif task_ns.conf_name == "dcmip301-C24_MG" %}
 
     {% do task_dict.update({
-        "opt_confs": ["dcmip301"],
+        "opt_confs": ["dcmip301", "tile_4x4"],
         "resolution": "C24_MG",
         "DT": 10,
         "mpi_parts": 6,
@@ -203,7 +203,7 @@
 {% elif task_ns.conf_name == "deep-hot-jupiter-C24_MG" %}
 
     {% do task_dict.update({
-        "opt_confs": ["deep-hot-jupiter"],
+        "opt_confs": ["deep-hot-jupiter", "tile_4x4"],
         "resolution": "C24_MG",
         "DT": 120,
         "mpi_parts": 6,
@@ -215,7 +215,7 @@
 {% elif task_ns.conf_name == "earth-like-C24_MG" %}
 
     {% do task_dict.update({
-        "opt_confs": ["earth-like", "io_nwp"],
+        "opt_confs": ["earth-like", "io_nwp", "tile_4x4"],
         "resolution": "C24_MG",
         "DT": 3600,
         "mpi_parts": 6,
@@ -227,7 +227,7 @@
 {% elif task_ns.conf_name == "held-suarez-C24_MG" %}
 
     {% do task_dict.update({
-        "opt_confs": ["held-suarez", "io_nwp"],
+        "opt_confs": ["held-suarez", "io_nwp", "tile_4x4"],
         "resolution": "C24_MG",
         "DT": 3600,
         "mpi_parts": 6,
@@ -238,7 +238,7 @@
 {% elif task_ns.conf_name == "lfric-real-domain-C48_MG" %}
 
     {% do task_dict.update({
-        "opt_confs": ["lfric-real-domain"],
+        "opt_confs": ["lfric-real-domain", "tile_4x4"],
         "resolution": "C48_MG",
         "DT": 1800,
         "mpi_parts": 6,
@@ -273,7 +273,7 @@
 {% elif task_ns.conf_name == "rk-dcmip301-C24" %}
 
     {% do task_dict.update({
-        "opt_confs": ["rk-dcmip301"],
+        "opt_confs": ["rk-dcmip301", "tile_4x4"],
         "resolution": "C24",
         "DT": 1,
         "mpi_parts": 6,
@@ -326,7 +326,7 @@
 {% elif task_ns.conf_name == "sbr-C24_MG" %}
 
     {% do task_dict.update({
-        "opt_confs": ["sbr"],
+        "opt_confs": ["sbr", "tile_4x4"],
         "resolution": "C24_MG",
         "DT": 3600,
         "mpi_parts": 6,
@@ -338,7 +338,7 @@
 {% elif task_ns.conf_name == "sbr-alt2-C24_MG_op" %}
 
     {% do task_dict.update({
-        "opt_confs": ["sbr", "gungho-alt2-spherical"],
+        "opt_confs": ["sbr", "gungho-alt2-spherical", "tile_4x4"],
         "resolution": "C24_MG_op",
         "DT": 3600,
         "mpi_parts": 6,
@@ -351,7 +351,7 @@
 {% elif task_ns.conf_name == "sbr-alt3-C24_MG" %}
 
     {% do task_dict.update({
-        "opt_confs": ["sbr", "gungho-alt3"],
+        "opt_confs": ["sbr", "gungho-alt3", "tile_4x4"],
         "resolution": "C24_MG",
         "DT": 3600,
         "mpi_parts": 6,
@@ -363,7 +363,7 @@
 {% elif task_ns.conf_name == "sbr_lam-n96_MG_lam" %}
 
     {% do task_dict.update({
-        "opt_confs": ["sbr_lam"],
+        "opt_confs": ["sbr_lam", "tile_4x4"],
         "resolution": "n96_MG_lam",
         "DT": 3600,
         "mpi_parts": 4,
@@ -375,7 +375,7 @@
 {% elif task_ns.conf_name == "sbr_lam-n96_MG_lam_rotate" %}
 
     {% do task_dict.update({
-        "opt_confs": ["sbr_lam"],
+        "opt_confs": ["sbr_lam", "tile_4x4"],
         "resolution": "n96_MG_lam_rotate",
         "DT": 3600,
         "mpi_parts": 4,
@@ -427,7 +427,7 @@
 {% elif task_ns.conf_name == "shallow-hot-jupiter-C24_MG" %}
 
     {% do task_dict.update({
-        "opt_confs": ["shallow-hot-jupiter"],
+        "opt_confs": ["shallow-hot-jupiter", "tile_4x4"],
         "resolution": "C24_MG",
         "DT": 2400,
         "mpi_parts": 6,
@@ -549,7 +549,7 @@
 {% elif task_ns.conf_name == "tidally-locked-earth-C24s_rot_MG" %}
 
     {% do task_dict.update({
-        "opt_confs": ["tidally-locked-earth"],
+        "opt_confs": ["tidally-locked-earth", "tile_4x4"],
         "resolution": "C24s_rot_MG",
         "DT": 3600,
         "mpi_parts": 6,
@@ -562,7 +562,7 @@
 {% elif task_ns.conf_name == "tidally-locked-earth-C24_MG" %}
 
     {% do task_dict.update({
-        "opt_confs": ["tidally-locked-earth"],
+        "opt_confs": ["tidally-locked-earth", "tile_4x4"],
         "resolution": "C24_MG",
         "DT": 3600,
         "mpi_parts": 6,

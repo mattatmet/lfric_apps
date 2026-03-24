@@ -14,7 +14,8 @@ the initialisation built-ins generically.
 
 from psyclone_tools import (redundant_computation_setval, colour_loops,
                             openmp_parallelise_loops,
-                            view_transformed_schedule)
+                            view_transformed_schedule,
+                            profile_loops)
 
 
 def trans(psyir):
@@ -34,19 +35,20 @@ def trans(psyir):
         'pressure_gradient_p0_code',
         'nodal_xyz_coordinates_code',
         'schur_backsub_code',
-        'apply_mixed_operator_code'#,
-        #'apply_mixed_lu_operator_code',
-        #'apply_elim_mixed_lp_operator_code',
-        #'scaled_matrix_vector_code'
-        #'opt_apply_variable_hx_code',
-        #'dg_matrix_vector_code',
-        #'dg_inc_matrix_vector_code',
+        'apply_mixed_operator_code',
+        'apply_mixed_lu_operator_code',
+        'apply_elim_mixed_lp_operator_code',
+        'scaled_matrix_vector_code'
+        'opt_apply_variable_hx_code',
+        'dg_matrix_vector_code',
+        'dg_inc_matrix_vector_code'#,
         #'helmholtz_operator_code',
         #'apply_helmholtz_operator_code'#,
     #    'held_suarez_fv_wind_code'
     ]
 
     redundant_computation_setval(psyir)
-    colour_loops(psyir,enable_tiling=True,tiling_kernel_list=None)
-    openmp_parallelise_loops(psyir,enable_profiler=True)
+    colour_loops(psyir,enable_tiling=True,tiling_kernel_list=tiling_kernels)
+    profile_loops(psyir)
+    openmp_parallelise_loops(psyir)
     view_transformed_schedule(psyir)
