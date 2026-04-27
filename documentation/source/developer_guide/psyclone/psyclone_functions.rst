@@ -26,3 +26,8 @@ Using the ``profile_loops`` function allows the user to wrap the outermost loop 
    def trans(psyir):
        profile_loops(psyir,colours_only=False)
 
+
+An important thing to note when including this function in an optimisation script is its position relative to other transformation functions.
+The ``profile_loops`` function must come after the ``colour_loops`` function but before the ``openmp_parallelise_loops`` function.
+This ensures that the callipers are injected into the correct position in the Psyclone generated code.
+The build step will fail gracefully if this function is used out of order.
