@@ -26,7 +26,18 @@ def trans(psyir):
     :type psyir: :py:class:`psyclone.psyir.nodes.FileContainer`
 
     '''
+
+
+    # Restrict tiling to kernels that can benefit
+    tiling_kernels = [
+        'matrix_vector_code',
+        'pressure_gradient_p0_code',
+        'nodal_xyz_coordinates_code',
+        'schur_backsub_code',
+        'scaled_matrix_vector_code'
+    ]
+
     redundant_computation_setval(psyir)
-    colour_loops(psyir)
+    colour_loops(psyir,enable_tiling=True,tiling_kernel_list=tiling_kernels)
     openmp_parallelise_loops(psyir)
     view_transformed_schedule(psyir)
